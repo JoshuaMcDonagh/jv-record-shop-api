@@ -1,13 +1,13 @@
-package com.northcoders.jv_record_shop_api;
+package com.northcoders.recordshop.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JvRecordShopApiApplication {
+public class RecordShopApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JvRecordShopApiApplication.class, args);
+		SpringApplication.run(RecordShopApiApplication.class, args);
 	}
 
 }
