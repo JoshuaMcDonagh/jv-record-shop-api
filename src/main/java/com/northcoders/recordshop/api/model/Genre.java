@@ -4,10 +4,10 @@ public enum Genre {
     ALTERNATIVE,
     ROCK,
     COUNTRY,
-    HIP_HOP,
+    HIPHOP,
     JAZZ,
     POP,
     RAP,
     METAL,
-    HEAVY_METAL
+    OTHER
 }
