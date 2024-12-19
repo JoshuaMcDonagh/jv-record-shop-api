@@ -15,7 +15,7 @@ public class Album {
 
     @Id
     @GeneratedValue(strategy=IDENTITY)
-    private long id;
+    private Long id;
 
     @Column(nullable = false)
     private String title;
@@ -41,12 +41,12 @@ public class Album {
     private Set<Artist> artists;
 
     @Column(nullable = false)
-    private int yearReleased;
+    private Integer yearReleased;
 
     @Column(nullable = false)
-    private long stock;
+    private Long stock;
 
     @Column(nullable = false)
-    private double price;
+    private Double price;
 
 }

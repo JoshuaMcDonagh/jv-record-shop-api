@@ -14,7 +14,7 @@ public class Artist {
 
     @Id
     @GeneratedValue(strategy=IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(nullable = false)
     private String name;
