@@ -6,13 +6,15 @@ import lombok.Data;
 import java.util.HashSet;
 import java.util.Set;
 
+import static jakarta.persistence.GenerationType.IDENTITY;
+
 @Entity
 @Table(name="albums")
 @Data
 public class Album {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=IDENTITY)
     private long id;
 
     @Column(nullable = false)
