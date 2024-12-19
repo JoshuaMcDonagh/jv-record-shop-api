@@ -3,11 +3,13 @@ package com.northcoders.recordshop.api.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.ArrayList;
+
 import static jakarta.persistence.GenerationType.*;
 
 @Entity
 @Table(name="artists")
-@Data // Creates toString, equals, hashCode, getters, setters and relevant constructors
+@Data
 public class Artist {
 
     @Id
@@ -17,7 +19,7 @@ public class Artist {
     @Column(nullable = false)
     private String name;
 
-    @ManyToMany(mappedBy="artist")
-    private Album album;
+    @ManyToMany(mappedBy="artists")
+    private ArrayList<Album> album = new ArrayList<>();
 
 }
